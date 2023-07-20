@@ -38,7 +38,7 @@ public class WeatherController {
             int  temperature = (int) mainObj.getDouble("temp");
             int feelsLike = (int) mainObj.getDouble("feels_like");
             int pressure =  mainObj.getInt("pressure");
-            
+
 
 
             model.addAttribute("temperature", fromKelvinToCels(temperature));
@@ -48,6 +48,7 @@ public class WeatherController {
         }
 
         return "weather";
+
     }
 
     @GetMapping("/about")
