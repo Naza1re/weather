@@ -15,7 +15,7 @@ import static com.example.Weather.TakingWeatherFromAPI.TakingWeather.*;
 @Controller
 public class WeatherController {
 
-    private static final String API = "&type=like&APPID=97873f87fc1b4927356aa0b926698655";
+
 
     @GetMapping("/")
     public String index() {
