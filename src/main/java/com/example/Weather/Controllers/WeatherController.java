@@ -24,6 +24,8 @@ public class WeatherController {
 
     @PostMapping("/weather")
     public String getWeather(@RequestParam("city") String city, Model model) throws JSONException {
+        System.out.println("Переход на другую страницу");
+        System.out.println("hello");
         String output = getUrlContent("http://api.openweathermap.org/data/2.5/find?q=" + city + "&type=like&APPID=97873f87fc1b4927356aa0b926698655");
         System.out.println(output);
 
